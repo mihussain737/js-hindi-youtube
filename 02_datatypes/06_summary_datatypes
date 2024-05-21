@@ -39,3 +39,26 @@ const myFunction= function(){
 }
 
 console.log(myFunction)
+
+
+//+++++++++++++++++++++++++++++++++
+// Stack (Primitive datatypes store in stack)// get value copy
+//Heap (Non-primitve datatypes store in heap)// get orginal value refrence
+
+let myname="hitesh";
+let anotherName=myname;
+
+anotherName="chai aur code"
+// console.log(myname);
+// console.log(anotherName);
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"upi@ybl"
+}
+
+let userTwo= userOne;
+
+userTwo.email="userTwo@gmail.com";
+console.log(userOne.email);//userTwo@gmail.com
+console.log(userOne.email);//userTwo@gmail.com
