@@ -1,0 +1,41 @@
+//primitive data types
+// String , Number, Boolean, null, undefined, BigInt, symbol
+
+//no primitive data types
+// Arrays, object,Functions
+
+
+const score=100;
+const scoreValue=100.3;
+
+const num=23;
+const isLoggedIn=false;
+let userEmail;
+
+const id=Symbol('123');
+const anotherId=Symbol('123');
+
+// console.log(id==anotherId);//false
+
+
+const bigNumber=123435456465464554654n; //BigInt
+// console.log(bigNumber);
+
+//Arrays
+const heros=["flash","superman","spiderman"];
+
+//objects
+
+let myObject={
+    name:"imam",
+    age:"25",
+    sub:"js"
+}
+
+// console.log(myObject);
+
+const myFunction= function(){
+    console.log("hello world");
+}
+
+console.log(myFunction)
