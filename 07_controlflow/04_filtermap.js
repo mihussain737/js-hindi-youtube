@@ -18,4 +18,24 @@ num.forEach((num1)=>{
         newNums.push(num1)
     }
 })
-console.log(newNums)
+// console.log(newNums)
+
+// filter use in array of objects
+
+const books=[
+    {title:'book one', genre:'science',publish:'1986'},
+    {title:'book two', genre:'history',publish:'1932'},
+    {title:'book seven', genre:'history',publish:'1960'},
+    {title:'book six', genre:'history',publish:'1988'},
+    {title:'book three', genre:'fiction',publish:'1999'},
+    {title:'book four', genre:'politics',publish:'2007'}
+]
+
+let userBooks=books.filter((book)=> book.genre==='history')
+// console.log(userBooks)
+userBooks=books.filter((bk)=>{
+    return(bk.publish>=1970 && bk.genre==='history')
+})
+console.log(userBooks
+
+)
