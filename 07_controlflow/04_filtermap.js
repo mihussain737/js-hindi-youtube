@@ -36,6 +36,48 @@ let userBooks=books.filter((book)=> book.genre==='history')
 userBooks=books.filter((bk)=>{
     return(bk.publish>=1970 && bk.genre==='history')
 })
-console.log(userBooks
+// console.log(userBooks)
 
-)
+//map
+const nums=[1,2,3,4,5,6]
+const newNum= nums.map((num)=>num+10);
+// console.log(newNum)
+
+//map map and filter
+
+const newNum1=nums.map((num)=> num*10)
+.map((num)=> num+1)
+.filter((num)=>{ return num>=40})
+// console.log(newNum1)
+
+//reduce method
+
+const myNumss=[1,2,3]
+let acc=myNumss.reduce(function(acc, currentVal){
+ return acc+currentVal
+},0)
+// console.log(acc)
+acc=myNumss.reduce((acc,currentVal)=>{
+    return acc+currentVal
+},0)
+// console.log(acc)
+
+//reduce method in array of objects
+const cart=[
+    {
+        course:"js",
+        price:300
+    },
+    {
+        course:"java",
+        price:400
+    },
+    
+    {
+        course:"C++",
+        price:500
+    }
+]
+const newCart=cart.reduce((acc,course)=>acc+course.price
+    ,0);
+    console.log(newCart)
