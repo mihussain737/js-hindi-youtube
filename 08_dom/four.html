@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom creation edit and remove</title>
+</head>
+<body style="background-color: #212121; color: white">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`; // Corrected string interpolation
+    document.querySelector('.language').appendChild(li); // Corrected method call
+}
+addLanguage('java');
+
+    // addLanguage("java")
+    // addLanguage("python")
+    function addOptimumLanguage(langName) {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.language').appendChild(li); // Corrected this line
+}
+addOptimumLanguage('golang');
+//edit
+const secondLang=document.querySelector("li:nth-child(2)")
+secondLang.innerHTML="MOJO"
+
+//edit and replace the second language
+const newLi=document.createElement('li')
+newLi.textContent="ruby"
+secondLang.replaceWith(newLi)
+
+//edit the first language
+const firstLang=document.querySelector("li:first-child")
+firstLang.outerHTML='<li> Typescript</li>'
+
+//remove 
+const lastLang=document.querySelector('li:last-child')
+lastLang.remove();
+</script>
+</html>
